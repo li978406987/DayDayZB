@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -10,6 +11,49 @@
         <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR">
             <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
             <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PNk-mX-jYk">
+                    <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="10" id="kWO-OP-bHB"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="columnYanzhiIcon" translatesAutoresizingMaskIntoConstraints="NO" id="alU-Na-NVC">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="Jvc-aJ-4MY"/>
+                        <constraint firstAttribute="width" constant="18" id="RSX-mP-MeT"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="颜值" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35Z-Vg-Zdx">
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ph-GU-J1l">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="Hua-UL-fJX"/>
+                    </constraints>
+                    <state key="normal" title="更多 &gt;">
+                        <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="8Ph-GU-J1l" secondAttribute="trailing" constant="10" id="8s3-g0-vVW"/>
+                <constraint firstItem="35Z-Vg-Zdx" firstAttribute="centerY" secondItem="alU-Na-NVC" secondAttribute="centerY" id="H1k-jr-0ap"/>
+                <constraint firstItem="8Ph-GU-J1l" firstAttribute="top" secondItem="PNk-mX-jYk" secondAttribute="bottom" constant="5" id="HG7-t8-hfd"/>
+                <constraint firstAttribute="bottom" secondItem="8Ph-GU-J1l" secondAttribute="bottom" constant="5" id="Hdr-cq-rBT"/>
+                <constraint firstItem="35Z-Vg-Zdx" firstAttribute="leading" secondItem="alU-Na-NVC" secondAttribute="trailing" constant="5" id="Jdv-4W-lZQ"/>
+                <constraint firstItem="alU-Na-NVC" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="10" id="OJc-YR-O16"/>
+                <constraint firstAttribute="trailing" secondItem="PNk-mX-jYk" secondAttribute="trailing" id="Sq1-be-iQb"/>
+                <constraint firstItem="PNk-mX-jYk" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="j85-by-liF"/>
+                <constraint firstItem="PNk-mX-jYk" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="kFA-KR-YPj"/>
+                <constraint firstItem="alU-Na-NVC" firstAttribute="top" secondItem="PNk-mX-jYk" secondAttribute="bottom" constant="11" id="vun-o8-2ZV"/>
+            </constraints>
         </collectionReusableView>
     </objects>
+    <resources>
+        <image name="columnYanzhiIcon" width="20" height="20"/>
+    </resources>
 </document>

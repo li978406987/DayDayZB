@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		491520EE1DD2EE8D00F792E0 /* CollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491520EC1DD2EE8D00F792E0 /* CollectionHeaderView.swift */; };
+		491520EF1DD2EE8D00F792E0 /* CollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 491520ED1DD2EE8D00F792E0 /* CollectionHeaderView.xib */; };
+		491520F21DD30A8300F792E0 /* CollectionViewNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491520F01DD30A8300F792E0 /* CollectionViewNormalCell.swift */; };
+		491520F31DD30A8300F792E0 /* CollectionViewNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 491520F11DD30A8300F792E0 /* CollectionViewNormalCell.xib */; };
+		491520F61DD3126900F792E0 /* CollectionViewPrettyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491520F41DD3126900F792E0 /* CollectionViewPrettyCell.swift */; };
+		491520F71DD3126900F792E0 /* CollectionViewPrettyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 491520F51DD3126900F792E0 /* CollectionViewPrettyCell.xib */; };
+		49180E721DD3FC560019E6BB /* NetWorkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49180E711DD3FC560019E6BB /* NetWorkTools.swift */; };
 		491867E21DCC9FF7005A9033 /* LJ_RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491867E11DCC9FF7005A9033 /* LJ_RecommendViewController.swift */; };
 		4948A7311DCB3197009EB702 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4948A72F1DCB3197009EB702 /* Profile.storyboard */; };
 		4948A7391DCB3215009EB702 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4948A7381DCB3215009EB702 /* MainViewController.swift */; };
@@ -24,6 +31,7 @@
 		498B07981DCB22FF001DDF49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 498B07961DCB22FF001DDF49 /* LaunchScreen.storyboard */; };
 		498B07AD1DCB2433001DDF49 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 498B07AB1DCB2433001DDF49 /* Home.storyboard */; };
 		498B07B21DCB244A001DDF49 /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 498B07B01DCB244A001DDF49 /* Follow.storyboard */; };
+		9875A5FCFFE1FF693B0DF3BA /* Pods_DayDayZB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D33CC5923CCEB93139E2864C /* Pods_DayDayZB.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -39,6 +47,13 @@
 /* End PBXBuildRule section */
 
 /* Begin PBXFileReference section */
+		491520EC1DD2EE8D00F792E0 /* CollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionHeaderView.swift; sourceTree = "<group>"; };
+		491520ED1DD2EE8D00F792E0 /* CollectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionHeaderView.xib; sourceTree = "<group>"; };
+		491520F01DD30A8300F792E0 /* CollectionViewNormalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewNormalCell.swift; sourceTree = "<group>"; };
+		491520F11DD30A8300F792E0 /* CollectionViewNormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewNormalCell.xib; sourceTree = "<group>"; };
+		491520F41DD3126900F792E0 /* CollectionViewPrettyCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewPrettyCell.swift; sourceTree = "<group>"; };
+		491520F51DD3126900F792E0 /* CollectionViewPrettyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewPrettyCell.xib; sourceTree = "<group>"; };
+		49180E711DD3FC560019E6BB /* NetWorkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkTools.swift; sourceTree = "<group>"; };
 		491867E11DCC9FF7005A9033 /* LJ_RecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LJ_RecommendViewController.swift; sourceTree = "<group>"; };
 		4948A7301DCB3197009EB702 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
 		4948A7381DCB3215009EB702 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +73,9 @@
 		498B07991DCB22FF001DDF49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		498B07AC1DCB2433001DDF49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DayDayZB/Base.lproj/Home.storyboard; sourceTree = SOURCE_ROOT; };
 		498B07B11DCB244A001DDF49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = DayDayZB/Base.lproj/Follow.storyboard; sourceTree = SOURCE_ROOT; };
+		C2938806FF9EC89CE3B204ED /* Pods-DayDayZB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DayDayZB.release.xcconfig"; path = "Pods/Target Support Files/Pods-DayDayZB/Pods-DayDayZB.release.xcconfig"; sourceTree = "<group>"; };
+		D33CC5923CCEB93139E2864C /* Pods_DayDayZB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DayDayZB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAD21C9199481CC7DB655D56 /* Pods-DayDayZB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DayDayZB.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DayDayZB/Pods-DayDayZB.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,12 +83,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9875A5FCFFE1FF693B0DF3BA /* Pods_DayDayZB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		020A9657133740C75D4DB4ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FAD21C9199481CC7DB655D56 /* Pods-DayDayZB.debug.xcconfig */,
+				C2938806FF9EC89CE3B204ED /* Pods-DayDayZB.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		164D3AF146BD96AD6572FDA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D33CC5923CCEB93139E2864C /* Pods_DayDayZB.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4948A7141DCB310B009EB702 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +215,10 @@
 			children = (
 				4948A7441DCB5E47009EB702 /* PageTitleView.swift */,
 				496613871DCC1E4700F73082 /* PageContentView.swift */,
+				491520F01DD30A8300F792E0 /* CollectionViewNormalCell.swift */,
+				491520F11DD30A8300F792E0 /* CollectionViewNormalCell.xib */,
+				491520F41DD3126900F792E0 /* CollectionViewPrettyCell.swift */,
+				491520F51DD3126900F792E0 /* CollectionViewPrettyCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -218,6 +258,7 @@
 		4948A7281DCB310B009EB702 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				49180E711DD3FC560019E6BB /* NetWorkTools.swift */,
 				4948A73F1DCB4CFA009EB702 /* Extension */,
 				4948A7461DCB6141009EB702 /* Common.swift */,
 			);
@@ -254,6 +295,8 @@
 		4948A7371DCB31DD009EB702 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				491520EC1DD2EE8D00F792E0 /* CollectionHeaderView.swift */,
+				491520ED1DD2EE8D00F792E0 /* CollectionHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -272,6 +315,8 @@
 			children = (
 				498B078C1DCB22FF001DDF49 /* DayDayZB */,
 				498B078B1DCB22FF001DDF49 /* Products */,
+				020A9657133740C75D4DB4ED /* Pods */,
+				164D3AF146BD96AD6572FDA0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -303,9 +348,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 498B079C1DCB22FF001DDF49 /* Build configuration list for PBXNativeTarget "DayDayZB" */;
 			buildPhases = (
+				8A342ACA4ADA8FC447AFF8D6 /* [CP] Check Pods Manifest.lock */,
 				498B07861DCB22FF001DDF49 /* Sources */,
 				498B07871DCB22FF001DDF49 /* Frameworks */,
 				498B07881DCB22FF001DDF49 /* Resources */,
+				F3EEF45FD794CD57EDB789EE /* [CP] Embed Pods Frameworks */,
+				6065F3AA0AD2A0C64BB4FD75 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 				4948A73C1DCB4042009EB702 /* PBXBuildRule */,
@@ -357,9 +405,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4948A7311DCB3197009EB702 /* Profile.storyboard in Resources */,
+				491520EF1DD2EE8D00F792E0 /* CollectionHeaderView.xib in Resources */,
 				498B07981DCB22FF001DDF49 /* LaunchScreen.storyboard in Resources */,
 				498B07951DCB22FF001DDF49 /* Assets.xcassets in Resources */,
+				491520F71DD3126900F792E0 /* CollectionViewPrettyCell.xib in Resources */,
 				498B07931DCB22FF001DDF49 /* Main.storyboard in Resources */,
+				491520F31DD30A8300F792E0 /* CollectionViewNormalCell.xib in Resources */,
 				498B07AD1DCB2433001DDF49 /* Home.storyboard in Resources */,
 				498B07B21DCB244A001DDF49 /* Follow.storyboard in Resources */,
 				4948A73E1DCB4CB3009EB702 /* Live.storyboard in Resources */,
@@ -368,19 +419,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6065F3AA0AD2A0C64BB4FD75 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DayDayZB/Pods-DayDayZB-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A342ACA4ADA8FC447AFF8D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F3EEF45FD794CD57EDB789EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DayDayZB/Pods-DayDayZB-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		498B07861DCB22FF001DDF49 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				491867E21DCC9FF7005A9033 /* LJ_RecommendViewController.swift in Sources */,
+				491520EE1DD2EE8D00F792E0 /* CollectionHeaderView.swift in Sources */,
 				4948A7451DCB5E47009EB702 /* PageTitleView.swift in Sources */,
 				4948A7431DCB5067009EB702 /* UIBarButtonItem-Extension.swift in Sources */,
 				4948A7391DCB3215009EB702 /* MainViewController.swift in Sources */,
+				491520F21DD30A8300F792E0 /* CollectionViewNormalCell.swift in Sources */,
+				49180E721DD3FC560019E6BB /* NetWorkTools.swift in Sources */,
 				496613881DCC1E4700F73082 /* PageContentView.swift in Sources */,
 				498B07901DCB22FF001DDF49 /* ViewController.swift in Sources */,
 				4966138A1DCC256700F73082 /* UIColor - Extension.swift in Sources */,
 				498B078E1DCB22FF001DDF49 /* AppDelegate.swift in Sources */,
+				491520F61DD3126900F792E0 /* CollectionViewPrettyCell.swift in Sources */,
 				4948A73B1DCB32BA009EB702 /* LJ_HomeViewController.swift in Sources */,
 				4948A7471DCB6141009EB702 /* Common.swift in Sources */,
 			);
@@ -529,6 +632,7 @@
 		};
 		498B079D1DCB22FF001DDF49 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAD21C9199481CC7DB655D56 /* Pods-DayDayZB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -542,6 +646,7 @@
 		};
 		498B079E1DCB22FF001DDF49 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2938806FF9EC89CE3B204ED /* Pods-DayDayZB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
