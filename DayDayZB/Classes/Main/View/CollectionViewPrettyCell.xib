@@ -15,79 +15,77 @@
                 <rect key="frame" x="0.0" y="0.0" width="238" height="209"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vPL-eS-RiA">
-                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                        <state key="normal" title="大连" image="ico_location">
-                            <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
-                        </state>
-                    </button>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_live_player_normal" translatesAutoresizingMaskIntoConstraints="NO" id="Wpy-R8-xe6"/>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="昵称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aui-X1-afI">
-                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" misplaced="YES" text="昵称" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aui-X1-afI">
+                        <frame key="frameInset" minX="24" minY="180" width="152" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="live_cell_default_phone" translatesAutoresizingMaskIntoConstraints="NO" id="2AK-70-jde">
                         <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="number" keyPath="layer.conrnerRadius">
-                                <integer key="value" value="5"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="6"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </imageView>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mWl-UU-yCS">
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="55.5万" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSc-dq-RkU">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="20" id="Lw6-rx-JUe"/>
-                                    <constraint firstAttribute="width" constant="50" id="ebO-DV-pXT"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.40000000000000002" colorSpace="calibratedWhite"/>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOj-Sx-L3r">
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="RSc-dq-RkU" firstAttribute="top" secondItem="mWl-UU-yCS" secondAttribute="top" id="EbC-rk-12G"/>
-                            <constraint firstAttribute="height" constant="20" id="F39-Ne-d8D"/>
-                            <constraint firstAttribute="width" constant="60" id="gEh-ii-q4a"/>
-                            <constraint firstItem="RSc-dq-RkU" firstAttribute="leading" secondItem="mWl-UU-yCS" secondAttribute="leading" constant="10" id="igJ-Sh-ljx"/>
-                            <constraint firstAttribute="bottom" secondItem="RSc-dq-RkU" secondAttribute="bottom" id="swO-xo-8CQ"/>
+                            <constraint firstAttribute="width" constant="70" id="cyw-Av-iRx"/>
+                            <constraint firstAttribute="height" constant="20" id="l5g-bh-Rwu"/>
                         </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="55.5万" image="viewerIcon">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
                         <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="number" keyPath="layer.conrnerRadius">
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.">
                                 <integer key="value" value="3"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
-                    </view>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ptz-BW-DLg">
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="大连市" image="home_live_vertical_locate">
+                            <color key="titleColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                        </state>
+                    </button>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="vPL-eS-RiA" firstAttribute="top" secondItem="2AK-70-jde" secondAttribute="bottom" constant="5" id="0HJ-k8-kM3"/>
-                <constraint firstAttribute="bottom" secondItem="vPL-eS-RiA" secondAttribute="bottom" constant="10" id="1Si-Yd-vM9"/>
-                <constraint firstItem="mWl-UU-yCS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="AFN-gL-FEN"/>
                 <constraint firstItem="aui-X1-afI" firstAttribute="centerY" secondItem="Wpy-R8-xe6" secondAttribute="centerY" id="Dxg-94-cZ3"/>
-                <constraint firstAttribute="trailing" secondItem="mWl-UU-yCS" secondAttribute="trailing" constant="5" id="GSe-Rk-QJw"/>
                 <constraint firstAttribute="bottom" secondItem="Wpy-R8-xe6" secondAttribute="bottom" constant="10" id="Pd0-e6-hY3"/>
                 <constraint firstItem="2AK-70-jde" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="arF-Z7-qYE"/>
                 <constraint firstAttribute="trailing" secondItem="2AK-70-jde" secondAttribute="trailing" id="b81-Vo-mbs"/>
-                <constraint firstAttribute="bottom" secondItem="aui-X1-afI" secondAttribute="bottom" constant="10" id="ftG-iQ-9YI"/>
-                <constraint firstItem="vPL-eS-RiA" firstAttribute="centerY" secondItem="Wpy-R8-xe6" secondAttribute="centerY" id="h4x-ZD-cVQ"/>
-                <constraint firstAttribute="trailing" secondItem="vPL-eS-RiA" secondAttribute="trailing" constant="5" id="k4x-OZ-fJJ"/>
+                <constraint firstAttribute="trailing" secondItem="ZOj-Sx-L3r" secondAttribute="trailing" constant="8" id="gCF-BJ-IdT"/>
+                <constraint firstAttribute="trailing" secondItem="ptz-BW-DLg" secondAttribute="trailing" constant="5" id="kvt-Ox-DBm"/>
                 <constraint firstItem="aui-X1-afI" firstAttribute="leading" secondItem="Wpy-R8-xe6" secondAttribute="trailing" constant="5" id="lNt-JS-8ix"/>
                 <constraint firstItem="Wpy-R8-xe6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="qMw-yD-4bI"/>
                 <constraint firstItem="2AK-70-jde" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="qf0-WI-hro"/>
-                <constraint firstAttribute="trailing" secondItem="vPL-eS-RiA" secondAttribute="trailing" constant="5" id="tHQ-CT-7I2"/>
+                <constraint firstItem="aui-X1-afI" firstAttribute="top" secondItem="2AK-70-jde" secondAttribute="bottom" constant="5" id="r7T-tk-qLR"/>
+                <constraint firstItem="ZOj-Sx-L3r" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="tuh-3H-Js3"/>
+                <constraint firstItem="ptz-BW-DLg" firstAttribute="top" secondItem="2AK-70-jde" secondAttribute="bottom" constant="5" id="u5R-w7-zzl"/>
+                <constraint firstAttribute="bottom" secondItem="ptz-BW-DLg" secondAttribute="bottom" constant="5" id="uQd-Ic-udS"/>
+                <constraint firstAttribute="bottom" secondItem="aui-X1-afI" secondAttribute="bottom" constant="5" id="y9D-5G-6Bx"/>
             </constraints>
             <size key="customSize" width="238" height="209"/>
-            <point key="canvasLocation" x="31" y="56.5"/>
+            <connections>
+                <outlet property="cityBtn" destination="ptz-BW-DLg" id="CWr-rS-fO4"/>
+                <outlet property="iconImageView" destination="2AK-70-jde" id="0aJ-k8-1Hk"/>
+                <outlet property="nickNameImageView" destination="Wpy-R8-xe6" id="1bt-qQ-DLN"/>
+                <outlet property="nickNameLabel" destination="aui-X1-afI" id="nDE-2C-rlp"/>
+                <outlet property="onlineBtn" destination="ZOj-Sx-L3r" id="b2O-Ft-gkd"/>
+            </connections>
+            <point key="canvasLocation" x="58" y="28.5"/>
         </collectionViewCell>
     </objects>
     <resources>
         <image name="home_live_player_normal" width="14" height="14"/>
-        <image name="ico_location" width="12" height="12"/>
+        <image name="home_live_vertical_locate" width="12" height="12"/>
         <image name="live_cell_default_phone" width="103" height="103"/>
+        <image name="viewerIcon" width="10" height="8"/>
     </resources>
 </document>

@@ -31,10 +31,7 @@ class NetWorkTools: NSObject {
             // 4将结果回调出去
         finshedCallBack(result as AnyObject)
         }
-        
-        
-    
-    
+
     }
     
 }

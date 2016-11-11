@@ -17,59 +17,64 @@
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" image="Img_default" translatesAutoresizingMaskIntoConstraints="NO" id="Et9-gd-YUJ">
                         <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="number" keyPath="layer.conrnerRadius">
-                                <integer key="value" value="5"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="6"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                         </userDefinedRuntimeAttributes>
                     </imageView>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="icD-Dl-kax">
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="33.3万" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LvX-N9-GfD">
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.40000000000000002" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="LvX-N9-GfD" secondAttribute="trailing" id="Hb7-dl-JRb"/>
-                            <constraint firstAttribute="width" constant="60" id="NH6-HK-x8a"/>
-                            <constraint firstAttribute="bottom" secondItem="LvX-N9-GfD" secondAttribute="bottom" id="jKb-Uo-Ddi"/>
-                            <constraint firstItem="LvX-N9-GfD" firstAttribute="leading" secondItem="icD-Dl-kax" secondAttribute="leading" constant="10" id="mZq-W0-kAM"/>
-                            <constraint firstAttribute="height" constant="20" id="ud0-cj-SdE"/>
-                            <constraint firstItem="LvX-N9-GfD" firstAttribute="top" secondItem="icD-Dl-kax" secondAttribute="top" id="zDI-SO-Ahf"/>
-                        </constraints>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="number" keyPath="layer.conrnerToRadius">
-                                <integer key="value" value="3"/>
-                            </userDefinedRuntimeAttribute>
-                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksBounds" value="YES"/>
-                        </userDefinedRuntimeAttributes>
-                    </view>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="哈哈哈哈" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyq-UB-RVX">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标题" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyq-UB-RVX">
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRm-gn-pkq">
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="昵称" image="home_live_player_phone"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ih0-fQ-4iT">
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="0Uf-t5-EF8"/>
+                            <constraint firstAttribute="width" constant="70" id="wnD-hH-CWy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="33.3" image="viewerIcon"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </button>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="icD-Dl-kax" secondAttribute="trailing" constant="5" id="BJb-vh-NAV"/>
+                <constraint firstItem="nyq-UB-RVX" firstAttribute="top" secondItem="PRm-gn-pkq" secondAttribute="bottom" constant="10" id="9QD-jU-zlO"/>
                 <constraint firstItem="Et9-gd-YUJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="QjF-QR-v6s"/>
                 <constraint firstAttribute="trailing" secondItem="Et9-gd-YUJ" secondAttribute="trailing" id="VtV-fX-zHv"/>
                 <constraint firstAttribute="trailing" secondItem="nyq-UB-RVX" secondAttribute="trailing" constant="5" id="aHo-86-6yN"/>
                 <constraint firstItem="nyq-UB-RVX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="og0-y9-4dD"/>
+                <constraint firstAttribute="trailing" secondItem="Ih0-fQ-4iT" secondAttribute="trailing" constant="5" id="psL-7U-Mf9"/>
+                <constraint firstItem="Ih0-fQ-4iT" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="qXr-QL-Vws"/>
                 <constraint firstItem="Et9-gd-YUJ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="rLQ-eA-9jD"/>
-                <constraint firstItem="icD-Dl-kax" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="uiQ-mU-Mav"/>
+                <constraint firstItem="PRm-gn-pkq" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="vI1-mf-lut"/>
                 <constraint firstAttribute="bottom" secondItem="nyq-UB-RVX" secondAttribute="bottom" constant="5" id="zG2-ar-Age"/>
                 <constraint firstItem="nyq-UB-RVX" firstAttribute="top" secondItem="Et9-gd-YUJ" secondAttribute="bottom" constant="5" id="zVM-vM-cCb"/>
             </constraints>
             <size key="customSize" width="243" height="196"/>
+            <connections>
+                <outlet property="iconImageView" destination="Et9-gd-YUJ" id="Qav-1E-suJ"/>
+                <outlet property="nicknameBtn" destination="PRm-gn-pkq" id="2GV-eJ-LzA"/>
+                <outlet property="onlineBtn" destination="Ih0-fQ-4iT" id="9ds-VM-EVG"/>
+                <outlet property="roomNameLabel" destination="nyq-UB-RVX" id="Qr8-Gm-0Fh"/>
+            </connections>
             <point key="canvasLocation" x="62.5" y="-6"/>
         </collectionViewCell>
     </objects>
     <resources>
         <image name="Img_default" width="172" height="103"/>
+        <image name="home_live_player_phone" width="14" height="14"/>
+        <image name="viewerIcon" width="10" height="8"/>
     </resources>
 </document>
