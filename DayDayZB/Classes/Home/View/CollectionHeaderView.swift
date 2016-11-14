@@ -10,6 +10,7 @@ import UIKit
 
 class CollectionHeaderView: UICollectionReusableView {
 
+    
     // Mark : - 控件属性
     
     @IBOutlet var titleLabel: UILabel!

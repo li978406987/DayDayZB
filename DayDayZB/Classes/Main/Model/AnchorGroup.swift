@@ -23,6 +23,8 @@ class AnchorGroup: NSObject {
     // 该组的标题
     var tag_name : String = ""
     
+    // 游戏对应图标
+    var icon_url : String = ""
     
     // 该组显示的图标
     var icon_name = "home_header_normal"

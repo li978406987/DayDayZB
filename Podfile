@@ -7,5 +7,5 @@ target 'DayDayZB' do
 
   # Pods for DayDayZB
 pod 'Alamofire', '~> 4.0.0'
-pod 'Kingfisher'
+
 end

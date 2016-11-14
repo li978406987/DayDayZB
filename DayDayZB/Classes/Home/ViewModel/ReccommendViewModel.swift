@@ -11,7 +11,11 @@ import UIKit
 class ReccommendViewModel {
     // Mark : - 懒加载属性
     lazy var anchorGroups : [AnchorGroup] = [AnchorGroup]()
+    
+    lazy var anchorAll : [AnchorGroup] = [AnchorGroup]()
 
+    lazy var cycleModels = [CycleModel]()
+    
     fileprivate lazy var bigDataGroup :AnchorGroup = AnchorGroup()
     fileprivate lazy var prettyDataGroup :AnchorGroup = AnchorGroup()
 }
@@ -93,13 +97,9 @@ extension ReccommendViewModel {
             // 3.遍历数组, 获取字典 ,并将字典转成模型对象
             for dict in dataArray {
                 let gruop = AnchorGroup(dict : dict)
-                if gruop.tag_name == "颜值" {
-                    
-                } else {
-                    self.anchorGroups.append(gruop)
-                }
-           
-           
+                
+                self.anchorGroups.append(gruop)
+                
             }
             dGroup.leave()
            
@@ -112,6 +112,30 @@ extension ReccommendViewModel {
             finishCallBack()
         }
         
+    }
+    
+    // 请求无限轮播的数据
+    func requestCycleData(finishCallBack : @escaping () -> ()) {
+        
+        NetWorkTools.requestData(type: .get, URLString: "http://capi.douyucdn.cn/api/v1/slide/6?version=2.401&client_sys=ios") { (result) in
+            
+            // 1.将result转成字典类型
+            guard let resultDic = result as? [String : NSObject] else { return }
+            
+            // 2.根绝date该key 获取数据
+            guard let dataArray = resultDic["data"] as? [[String : NSObject]] else { return }
+            
+            // 3.遍历字典 ,转成模型对象
+            
+            // 3.2 获取主播数据
+            for dict in dataArray {
+                self.cycleModels.append(CycleModel(dict : dict))
+            }
+           
+            finishCallBack()
+    }
+
+       
     }
 }
 

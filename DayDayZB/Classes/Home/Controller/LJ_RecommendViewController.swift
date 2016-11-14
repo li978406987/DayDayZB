@@ -15,6 +15,10 @@ fileprivate let kNormalItemH = kItemW * 3 / 4
 fileprivate let kPrettyItemH = kItemW
 fileprivate let kHeaderViewH : CGFloat = 50
 
+fileprivate let kCycleViewH = kScreenW * 3 / 8
+
+fileprivate let kGameViewH : CGFloat = 90
+
 fileprivate let kNormalCellID = "kNormalCellID"
 fileprivate let kPrettyCellID = "kPrettyCellID"
 fileprivate let kHeaderViewID = "HeaderViewID"
@@ -51,6 +55,19 @@ class LJ_RecommendViewController: UIViewController {
         
     }()
     
+    fileprivate lazy var cycleView : RecommendCycleView = {
+        let cycleView = RecommendCycleView.recommendcycleView()
+        cycleView.frame = CGRect(x: 0, y: -(kCycleViewH + kGameViewH), width: kScreenW, height:kCycleViewH)
+        
+        return cycleView
+    }()
+    
+    fileprivate lazy var gameView : RecommendGameView = {
+        let gameView = RecommendGameView.recommendGameView()
+        gameView.frame = CGRect(x:0, y:-kGameViewH, width:kScreenW, height:kGameViewH)
+        return gameView
+    }()
+    
     
     // MARK: - 系统回调函数
     override func viewDidLoad() {
@@ -69,9 +86,21 @@ class LJ_RecommendViewController: UIViewController {
 
 extension LJ_RecommendViewController {
     fileprivate func loadData() {
+        
+        // 1.请求推荐数据
         recommendVM.requestData {
+            // 展示推荐数据
             self.collectionView.reloadData()
+            
+            // 将数据传递给GameView
+            self.gameView.groups = self.recommendVM.anchorGroups
         }
+        // 2.请求轮播数据
+        recommendVM.requestCycleData {
+           self.cycleView.cycleModels = self.recommendVM.cycleModels
+        }
+        
+        
     }
 }
 
@@ -81,6 +110,15 @@ extension LJ_RecommendViewController {
     fileprivate func setupUI() {
       // 1.将collectionView添加到控制器的View上
         view.addSubview(collectionView)
+        // 2.将cyclyView添加到collectionView
+        collectionView.addSubview(cycleView)
+        
+        // 3.将gameView添加带collectionView中
+        collectionView.addSubview(gameView)
+        
+        // 4.设置collectionView的内边框
+        collectionView.contentInset = UIEdgeInsetsMake(kCycleViewH + kGameViewH, 0, 0, 0)
+        
         
     }
     
@@ -106,6 +144,7 @@ extension LJ_RecommendViewController : UICollectionViewDataSource, UICollectionV
         
         
         // 定义cell
+        
         
         // 取出cell
         if indexPath.section == 1 {
