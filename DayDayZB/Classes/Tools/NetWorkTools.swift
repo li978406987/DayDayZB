@@ -16,7 +16,7 @@ enum MethodType {
 }
 class NetWorkTools: NSObject {
 
-    class func requestData(type : MethodType, URLString : String, parameters : [String : NSString]? = nil, finshedCallBack : @escaping (_ result : AnyObject) -> ()) {
+    class func requestData(type : MethodType, URLString : String, parameters : [String : NSString]? = nil, finshedCallBack : @escaping (_ result : Any) -> ()) {
     
         // 1.获取数据
         let method = type == .get ? HTTPMethod.get : HTTPMethod.post
@@ -28,8 +28,8 @@ class NetWorkTools: NSObject {
                 print(response.result.error)
                 return
             }
-            // 4将结果回调出去
-        finshedCallBack(result as AnyObject)
+            // 4将结果回调出去 (闭包在闭包里使用需要加@escaping(逃逸))
+        finshedCallBack(result)
         }
 
     }

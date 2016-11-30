@@ -19,6 +19,14 @@
 		49180EAD1DD4642A0019E6BB /* AnchorGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49180EAC1DD4642A0019E6BB /* AnchorGroup.swift */; };
 		49180EAF1DD466EA0019E6BB /* AnchorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49180EAE1DD466EA0019E6BB /* AnchorModel.swift */; };
 		491867E21DCC9FF7005A9033 /* LJ_RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491867E11DCC9FF7005A9033 /* LJ_RecommendViewController.swift */; };
+		493ED2FC1DE85FF700828307 /* LJ_GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493ED2FB1DE85FF700828307 /* LJ_GameViewController.swift */; };
+		493ED2FE1DE8672E00828307 /* GameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493ED2FD1DE8672E00828307 /* GameViewModel.swift */; };
+		493ED3021DE9114400828307 /* LJ_AmuseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493ED3011DE9114400828307 /* LJ_AmuseViewController.swift */; };
+		493ED3061DE9146800828307 /* AmuseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493ED3051DE9146800828307 /* AmuseViewModel.swift */; };
+		493ED3091DE927C400828307 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493ED3081DE927C400828307 /* BaseViewModel.swift */; };
+		493ED30B1DE95EBB00828307 /* BaseAnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493ED30A1DE95EBB00828307 /* BaseAnchorViewController.swift */; };
+		493ED30D1DE98DF400828307 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493ED30C1DE98DF400828307 /* GameModel.swift */; };
+		493ED30F1DE9932000828307 /* BaseGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493ED30E1DE9931F00828307 /* BaseGameModel.swift */; };
 		4948A7311DCB3197009EB702 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4948A72F1DCB3197009EB702 /* Profile.storyboard */; };
 		4948A7391DCB3215009EB702 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4948A7381DCB3215009EB702 /* MainViewController.swift */; };
 		4948A73B1DCB32BA009EB702 /* LJ_HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4948A73A1DCB32BA009EB702 /* LJ_HomeViewController.swift */; };
@@ -92,6 +100,14 @@
 		49180EAC1DD4642A0019E6BB /* AnchorGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorGroup.swift; sourceTree = "<group>"; };
 		49180EAE1DD466EA0019E6BB /* AnchorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchorModel.swift; sourceTree = "<group>"; };
 		491867E11DCC9FF7005A9033 /* LJ_RecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LJ_RecommendViewController.swift; sourceTree = "<group>"; };
+		493ED2FB1DE85FF700828307 /* LJ_GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LJ_GameViewController.swift; sourceTree = "<group>"; };
+		493ED2FD1DE8672E00828307 /* GameViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewModel.swift; sourceTree = "<group>"; };
+		493ED3011DE9114400828307 /* LJ_AmuseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LJ_AmuseViewController.swift; sourceTree = "<group>"; };
+		493ED3051DE9146800828307 /* AmuseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmuseViewModel.swift; sourceTree = "<group>"; };
+		493ED3081DE927C400828307 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		493ED30A1DE95EBB00828307 /* BaseAnchorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAnchorViewController.swift; sourceTree = "<group>"; };
+		493ED30C1DE98DF400828307 /* GameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		493ED30E1DE9931F00828307 /* BaseGameModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseGameModel.swift; sourceTree = "<group>"; };
 		4948A7301DCB3197009EB702 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
 		4948A7381DCB3215009EB702 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		4948A73A1DCB32BA009EB702 /* LJ_HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LJ_HomeViewController.swift; sourceTree = "<group>"; };
@@ -178,6 +194,16 @@
 			isa = PBXGroup;
 			children = (
 				49180EA61DD45A6C0019E6BB /* ReccommendViewModel.swift */,
+				493ED2FD1DE8672E00828307 /* GameViewModel.swift */,
+				493ED3051DE9146800828307 /* AmuseViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		493ED3071DE9279500828307 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				493ED3081DE927C400828307 /* BaseViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -262,6 +288,7 @@
 		4948A71D1DCB310B009EB702 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				493ED3071DE9279500828307 /* ViewModel */,
 				4948A71E1DCB310B009EB702 /* Controller */,
 				4948A7211DCB310B009EB702 /* Model */,
 				4948A7221DCB310B009EB702 /* View */,
@@ -274,6 +301,7 @@
 			children = (
 				4948A7381DCB3215009EB702 /* MainViewController.swift */,
 				498B07911DCB22FF001DDF49 /* Main.storyboard */,
+				493ED30A1DE95EBB00828307 /* BaseAnchorViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -283,6 +311,7 @@
 			children = (
 				49180EAC1DD4642A0019E6BB /* AnchorGroup.swift */,
 				49180EAE1DD466EA0019E6BB /* AnchorModel.swift */,
+				493ED30E1DE9931F00828307 /* BaseGameModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -360,6 +389,8 @@
 				498B07AB1DCB2433001DDF49 /* Home.storyboard */,
 				4948A73A1DCB32BA009EB702 /* LJ_HomeViewController.swift */,
 				491867E11DCC9FF7005A9033 /* LJ_RecommendViewController.swift */,
+				493ED2FB1DE85FF700828307 /* LJ_GameViewController.swift */,
+				493ED3011DE9114400828307 /* LJ_AmuseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -368,6 +399,7 @@
 			isa = PBXGroup;
 			children = (
 				496A2F8E1DD6AD1200DF5398 /* CycleModel.swift */,
+				493ED30C1DE98DF400828307 /* GameModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -494,7 +526,7 @@
 				TargetAttributes = {
 					498B07891DCB22FF001DDF49 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = CUP6YMS74H;
+						DevelopmentTeam = C2UEMYKUYG;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -599,6 +631,7 @@
 				496A2FB11DD6E96C00DF5398 /* Filter.swift in Sources */,
 				496A2FB41DD6E96C00DF5398 /* ImageDownloader.swift in Sources */,
 				491520EE1DD2EE8D00F792E0 /* CollectionHeaderView.swift in Sources */,
+				493ED3091DE927C400828307 /* BaseViewModel.swift in Sources */,
 				4948A7451DCB5E47009EB702 /* PageTitleView.swift in Sources */,
 				496A2FBF1DD6E96C00DF5398 /* RequrstModifier.swift in Sources */,
 				4948A7431DCB5067009EB702 /* UIBarButtonItem-Extension.swift in Sources */,
@@ -612,13 +645,17 @@
 				49180E721DD3FC560019E6BB /* NetWorkTools.swift in Sources */,
 				496A2FB91DD6E96C00DF5398 /* Indicator.swift in Sources */,
 				496613881DCC1E4700F73082 /* PageContentView.swift in Sources */,
+				493ED2FE1DE8672E00828307 /* GameViewModel.swift in Sources */,
 				496A2FB31DD6E96C00DF5398 /* ImageCache.swift in Sources */,
 				49180EAD1DD4642A0019E6BB /* AnchorGroup.swift in Sources */,
+				493ED3061DE9146800828307 /* AmuseViewModel.swift in Sources */,
 				496A2FC21DD6E96C00DF5398 /* ThreadHelper.swift in Sources */,
 				496A2FB51DD6E96C00DF5398 /* ImagePrefetcher.swift in Sources */,
+				493ED30D1DE98DF400828307 /* GameModel.swift in Sources */,
 				498B07901DCB22FF001DDF49 /* ViewController.swift in Sources */,
 				496A2FB71DD6E96C00DF5398 /* ImageTransition.swift in Sources */,
 				496A2FAF1DD6E96C00DF5398 /* Box.swift in Sources */,
+				493ED3021DE9114400828307 /* LJ_AmuseViewController.swift in Sources */,
 				496A2FBB1DD6E96C00DF5398 /* Kingfisher.swift in Sources */,
 				4966138A1DCC256700F73082 /* UIColor - Extension.swift in Sources */,
 				496A2FBD1DD6E96C00DF5398 /* KingfisherOptionsInfo.swift in Sources */,
@@ -627,6 +664,8 @@
 				498B078E1DCB22FF001DDF49 /* AppDelegate.swift in Sources */,
 				496A2FCC1DD9478A00DF5398 /* CollectionViewGameCell.swift in Sources */,
 				491520F61DD3126900F792E0 /* CollectionViewPrettyCell.swift in Sources */,
+				493ED30B1DE95EBB00828307 /* BaseAnchorViewController.swift in Sources */,
+				493ED30F1DE9932000828307 /* BaseGameModel.swift in Sources */,
 				496A2FB61DD6E96C00DF5398 /* ImageProcessor.swift in Sources */,
 				496A2FB21DD6E96C00DF5398 /* Image.swift in Sources */,
 				496A2F871DD5F56F00DF5398 /* RecommendCycleView.swift in Sources */,
@@ -634,6 +673,7 @@
 				4948A73B1DCB32BA009EB702 /* LJ_HomeViewController.swift in Sources */,
 				496A2FC31DD6E96C00DF5398 /* UIButton+Kingfisher.swift in Sources */,
 				496A2F921DD6BCF300DF5398 /* CollectionViewCycleCell.swift in Sources */,
+				493ED2FC1DE85FF700828307 /* LJ_GameViewController.swift in Sources */,
 				49180EAF1DD466EA0019E6BB /* AnchorModel.swift in Sources */,
 				496A2FB01DD6E96C00DF5398 /* CacheSerializer.swift in Sources */,
 				4948A7471DCB6141009EB702 /* Common.swift in Sources */,
@@ -787,8 +827,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = CUP6YMS74H;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Liu Peng (HTS8H542N7)";
+				DEVELOPMENT_TEAM = C2UEMYKUYG;
 				INFOPLIST_FILE = DayDayZB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LiJie.DayDayZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -803,8 +845,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = CUP6YMS74H;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Liu Peng (C2UEMYKUYG)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Liu Peng (C2UEMYKUYG)";
+				DEVELOPMENT_TEAM = C2UEMYKUYG;
 				INFOPLIST_FILE = DayDayZB/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LiJie.DayDayZB;
 				PRODUCT_NAME = "$(TARGET_NAME)";

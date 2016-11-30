@@ -8,10 +8,8 @@
 
 import UIKit
 
-class ReccommendViewModel {
+class ReccommendViewModel : BaseViewModel {
     // Mark : - 懒加载属性
-    lazy var anchorGroups : [AnchorGroup] = [AnchorGroup]()
-    
     lazy var anchorAll : [AnchorGroup] = [AnchorGroup]()
 
     lazy var cycleModels = [CycleModel]()
@@ -20,9 +18,7 @@ class ReccommendViewModel {
     fileprivate lazy var prettyDataGroup :AnchorGroup = AnchorGroup()
 }
 
-
 // Mark: - 发送网络请求
-
 extension ReccommendViewModel {
     func requestData(finishCallBack : @escaping () -> ()) {
         
@@ -34,10 +30,10 @@ extension ReccommendViewModel {
         NetWorkTools.requestData(type: .get, URLString: "http://capi.douyucdn.cn/api/v1/getbigDataRoom?client_sys=ios") { (result) in
     
             // 1.将result转成字典类型
-            guard let resultDic = result as? [String : NSObject] else { return }
+            guard let resultDic = result as? [String : Any] else { return }
             
             // 2.根绝date该key 获取数据
-            guard let dataArray = resultDic["data"] as? [[String : NSObject]] else { return }
+            guard let dataArray = resultDic["data"] as? [[String : Any]] else { return }
             
             // 3.遍历字典 ,转成模型对象
 
@@ -62,10 +58,10 @@ extension ReccommendViewModel {
         NetWorkTools.requestData(type: .get, URLString: "http://capi.douyucdn.cn/api/v1/getVerticalRoom?limit=4&client_sys=ios&offset=0") { (result) in
             
             // 1.将result转成字典类型
-            guard let resultDic = result as? [String : NSObject] else { return }
+            guard let resultDic = result as? [String : Any] else { return }
             
             // 2.根绝date该key 获取数据
-            guard let dataArray = resultDic["data"] as? [[String : NSObject]] else { return }
+            guard let dataArray = resultDic["data"] as? [[String : Any]] else { return }
             
             // 3.遍历字典 ,转成模型对象
             // 3.1 设置组的属性
@@ -78,7 +74,7 @@ extension ReccommendViewModel {
                 
                 self.prettyDataGroup.anchors.append(anchor)
             }
-
+            //  离开组
              dGroup.leave()
             
         }
@@ -86,21 +82,8 @@ extension ReccommendViewModel {
         
         // 3.请求后面部分的游戏数据
         dGroup.enter()
-        NetWorkTools.requestData(type: .get, URLString: "http://capi.douyucdn.cn/api/v1/getHotCate?aid=ios&client_sys=ios&time=1478688180&auth=3c532e2588a3570bfd59a2a41a1c279a") { (result) in
-            
-            // 1.将result转成字典类型
-            guard let resultDic = result as? [String : NSObject] else { return }
-            
-            // 2.根绝date该key 获取数据
-            guard let dataArray = resultDic["data"] as? [[String : NSObject]] else { return }
-            
-            // 3.遍历数组, 获取字典 ,并将字典转成模型对象
-            for dict in dataArray {
-                let gruop = AnchorGroup(dict : dict)
-                
-                self.anchorGroups.append(gruop)
-                
-            }
+        loadAnchorData(URLString: "http://capi.douyucdn.cn/api/v1/getHotCate?aid=ios&client_sys=ios&time=1478688180&auth=3c532e2588a3570bfd59a2a41a1c279a") {
+        
             dGroup.leave()
            
         }
@@ -120,16 +103,16 @@ extension ReccommendViewModel {
         NetWorkTools.requestData(type: .get, URLString: "http://capi.douyucdn.cn/api/v1/slide/6?version=2.401&client_sys=ios") { (result) in
             
             // 1.将result转成字典类型
-            guard let resultDic = result as? [String : NSObject] else { return }
+            guard let resultDic = result as? [String : Any] else { return }
             
             // 2.根绝date该key 获取数据
-            guard let dataArray = resultDic["data"] as? [[String : NSObject]] else { return }
+            guard let dataArray = resultDic["data"] as? [[String : Any]] else { return }
             
             // 3.遍历字典 ,转成模型对象
             
             // 3.2 获取主播数据
             for dict in dataArray {
-                self.cycleModels.append(CycleModel(dict : dict))
+                self.cycleModels.append(CycleModel(dict : dict as! [String : NSObject]))
             }
            
             finishCallBack()

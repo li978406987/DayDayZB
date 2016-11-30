@@ -23,6 +23,9 @@ class LJ_HomeViewController: UIViewController {
         return titleView
         
     }()
+    
+    
+    
 
 
     fileprivate lazy var pageContenView : PageContentView = {[weak self] in
@@ -32,8 +35,9 @@ class LJ_HomeViewController: UIViewController {
         //确定所有的子控制器
         var chileVcs = [UIViewController]()
         chileVcs.append(LJ_RecommendViewController())
-        
-        for _ in 0..<5 {
+        chileVcs.append(LJ_GameViewController())
+        chileVcs.append(LJ_AmuseViewController())
+        for _ in 0..<2 {
             let vc = UIViewController()
             vc.view.backgroundColor = UIColor(r: CGFloat(arc4random_uniform(255)), g: CGFloat(arc4random_uniform(255)), b: CGFloat(arc4random_uniform(255)))
             chileVcs.append(vc)
