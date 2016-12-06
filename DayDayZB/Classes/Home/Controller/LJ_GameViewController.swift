@@ -11,8 +11,10 @@ import UIKit
 private let kEdgMargin : CGFloat = 10
 private let kItemW : CGFloat = (kScreenW - 2 * kEdgMargin) / 3
 private let kItemH : CGFloat = kItemW * 6 / 5
+private let kHeaderViewH : CGFloat = 50
 
 private let kGameCelID = "kGameCelID"
+private let kHeaderViewID = "kHeaderViewID"
 
 class LJ_GameViewController: UIViewController {
 
@@ -24,13 +26,14 @@ class LJ_GameViewController: UIViewController {
         layout.itemSize = CGSize(width: kItemW, height: kItemH)
         layout.minimumLineSpacing = 0
         layout.minimumInteritemSpacing = 0
+        layout.headerReferenceSize = CGSize(width: kScreenW, height: kHeaderViewH)
         layout.sectionInset = UIEdgeInsets(top: 0, left: kEdgMargin, bottom: 0, right: kEdgMargin)
         
         let collectionView = UICollectionView(frame:self.view.bounds, collectionViewLayout: layout)
         collectionView.backgroundColor = UIColor.white
         collectionView.register(UINib(nibName: "CollectionViewGameCell", bundle: nil), forCellWithReuseIdentifier: kGameCelID)
         collectionView.dataSource = self
-        
+        collectionView.register(UINib(nibName: "CollectionHeaderView", bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: kHeaderViewID)
         return collectionView
         
     }()
@@ -41,6 +44,8 @@ class LJ_GameViewController: UIViewController {
         
         setupUI()
         loadData()
+    
+        
     }
 }
 
@@ -77,6 +82,19 @@ extension LJ_GameViewController : UICollectionViewDataSource {
         cell.baseGame = gameModel
             return cell
         }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        
+        // 取出HeaderView
+        let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: kHeaderViewID, for: indexPath) as! CollectionHeaderView
+        
+        // 给HeaderView设置属性
+        headerView.titleLabel.text = "全部"
+        headerView.iconImageView.image = UIImage(named: "Img_orange")
+        headerView.moreBtn.isHidden = true
+        
+        return headerView
+    }
    
 }
 

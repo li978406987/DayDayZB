@@ -15,6 +15,7 @@ class CollectionHeaderView: UICollectionReusableView {
     
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var iconImageView: UIImageView!
+    @IBOutlet var moreBtn: UIButton!
     // Mark : - 定义模型属性
     var group : AnchorGroup? {
         didSet {
